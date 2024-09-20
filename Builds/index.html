@@ -10,7 +10,7 @@
   </head>
   <body>
     <div id="unity-container">
-      <canvas id="unity-canvas" width=1344 height=840 tabindex="-1"></canvas>
+      <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -60,13 +60,13 @@
       var loaderUrl = buildUrl + "/Builds.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/Builds.data.unityweb",
-        frameworkUrl: buildUrl + "/Builds.framework.js.unityweb",
-        codeUrl: buildUrl + "/Builds.wasm.unityweb",
+        dataUrl: buildUrl + "/Builds.data",
+        frameworkUrl: buildUrl + "/Builds.framework.js",
+        codeUrl: buildUrl + "/Builds.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "webgpu-template",
-        productVersion: "0.1.0",
+        productVersion: "",
         showBanner: unityShowBanner,
       };
 
